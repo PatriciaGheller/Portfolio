@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d77a6f208d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Portifólio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400;1,500&family=Poppins:ital,wght@1,200&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="lib/typed.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div>
+            <img src="pg.jpg" alt="logo Patrícia Gheller" height="90" width="90">
+        </div>
+        <ul class="fa-ul">
+            <li><i class="fa fa-github"></i><a target="_blank" href="https://github.com/PatriciaGheller">github</a></li>
+
+            <li><i class="fas fa-at"></i><a target="_blank" href="mailto:patricia.gheller.1985@gmail.com">email</a></li>
+
+            <li><i class="fa fa-whatsapp"></i><a target="_blank" href="https://wa.me/21999165586">whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Patrícia Gheller</h1>
+                <h5>Full Stack Developer</h5>
+
+
+            </div>
+            <div id="arrow" onclick="mostraBio('bio')">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div class="imagem">
+                <div id="bio" class="oculta">
+
+                    <img class="foto" src="Foto.jpg" alt="foto Patrícia Gheller" height="350" width="350">
+                    <div id="about">
+                        <p>Vivemos em um constante processo de evolução e inovação, portanto tecnologia é essencial.
+                            <br>Venho aprimorando métodos de trabalho em equipe. Implementação de
+                            novas
+                            ferramentas e linguagens. <br>Atualmente desenvolvo projetos pessoais <br>os quais se
+                            dispõem de ferramentas: HTML, CSS e JS. <br>Projetos com o máximo de desempenho e
+                            dedicação.<br>Busco
+                            oportunidade para uma vaga Full Stack Developer Jr <br>onde eu possa contribuir para o
+                            desenvolvimento e sucesso de grandes projetos.<br>Sempre com o intuíto de avançar e
+                            somar<br>para
+                            o
+                            crescimento da empresa construindo <br>um
+                            plano de carreira.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="index.html">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+<style>
+    ul {
+        list-style: none;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffff
+    }
+
+    .nome {
+        color: #D089FF;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .fa-solid {
+        color: #D089FF;
+
+    }
+
+    body {
+
+        background-image: linear-gradient(120deg, #36f, #085358, #468809, #911850, #6b7bac);
+        animation: colors 15s ease infinite;
+        background-size: 300% 300%;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        box-shadow: 1px 1px 10px 1px #D089FF;
+        margin-bottom: 45px;
+    }
+
+    h5 {
+        color: #ffffff;
+
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header ul li {
+        padding: 50px;
+    }
+
+    header ul li a {
+        transition: 400ms;
+    }
+
+    header ul li a:hover {
+        color: #f8a662;
+        text-decoration: underline;
+    }
+
+    .fa-ul {
+        color: #D089FF;
+    }
+
+    #logo {
+        background-image: url(logo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid #1d1b1ab4;
+        border-radius: 100%;
+        width: 150px;
+
+    }
+
+
+    .container {
+        text-align: center;
+    }
+
+    .container .name h1 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    main p {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: justify;
+
+    }
+
+
+
+
+    #arrow {
+        font-size: 35px;
+        cursor: pointer;
+        animation: blink 1s steps(5, start) infinite;
+    }
+
+    .foto {
+        border-radius: 50%;
+        display: block;
+margin: auto;
+
+    }
+
+
+    @keyframes blink {
+        to {
+            visibility: hidden;
+        }
+    }
+
+    #animation {
+        transition: 300ms;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+        transition: 300ms;
+    }
+
+    .active {
+        display: block !important;
+    }
+
+    .container .name h5 {
+        font-size: 30px;
+    }
+
+    .oculta {
+        display: none;
+
+    }
+
+    #about p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-size: 14pt;
+        border-radius: 5px;
+
+        color: #ffffff;
+    }
+
+
+    #about h1 {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 40%;
+        margin: 0 auto;
+        border: thick groove #D089FF;
+        border-radius: 5px;
+        padding: 25px;
+        margin-top: 30px;
+        color: #ffffff;
+    }
+
+    .form input {
+        width: 50%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .form button {
+        width: 15%;
+        padding: 5px 10px;
+        background: linear-gradient(to right, #d089ff49 50%, #D089FF 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        color: #413d3d;
+        font-weight: 700;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+        transition: all 300ms ease-out;
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+
+    .form button:hover {
+        background-position: left bottom;
+        color: #ffffff;
+    }
+
+    @media only screem and (max-width: 768) {
+        .form {
+            width: 100%;
+        }
+
+        .form buttom {
+            font-size: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .container .name h1 {
+            font-size: 30px;
+        }
+
+        .container .name h5 {
+            font-size: 15px;
+        }
+
+        #about p {
+            max-width: 80%;
+            text-align: justify;
+        }
+
+        .form buttom {
+            font-size: 10px;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+    }
+</style>
